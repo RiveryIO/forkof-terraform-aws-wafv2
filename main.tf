@@ -2,6 +2,7 @@ resource "aws_wafv2_web_acl" "this" {
   name        = var.name
   description = var.description
   scope       = var.scope
+  region      = var.region
   tags        = var.tags
 
   default_action {

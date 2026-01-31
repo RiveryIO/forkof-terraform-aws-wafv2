@@ -14,6 +14,12 @@ variable "scope" {
   type        = string
 }
 
+variable "region" {
+  description = "(Optional) Region where this resource will be managed. Defaults to the Region set in the provider configuration."
+  type        = string
+  default     = null
+}
+
 variable "default_action" {
   description = "(Required) Action to perform if none of the rules contained in the WebACL match."
   type        = string
