@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [4.1.0](https://github.com/aws-ss/terraform-aws-wafv2/compare/v4.0.1...v4.1.0) (2026-01-31)
+
+
+### Features
+
+* support 'region' argument on 'aws_wafv2_web_acl' ([da7be51](https://github.com/aws-ss/terraform-aws-wafv2/commit/da7be511cbd7265ab8b7fc0e22ae34deb51c7994))
+
 ### [4.0.1](https://github.com/aws-ss/terraform-aws-wafv2/compare/v4.0.0...v4.0.1) (2026-01-07)
 
 
