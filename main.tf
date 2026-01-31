@@ -12317,9 +12317,9 @@ resource "aws_wafv2_web_acl" "this" {
     iterator = custom_response_body
 
     content {
-      content      = custom_response_body.value.content
-      content_type = custom_response_body.value.content_type
-      key          = custom_response_body.value.key
+      content      = lookup(custom_response_body.value, "content", null)
+      content_type = lookup(custom_response_body.value, "content_type", null)
+      key          = lookup(custom_response_body.value, "key", null)
     }
   }
 
