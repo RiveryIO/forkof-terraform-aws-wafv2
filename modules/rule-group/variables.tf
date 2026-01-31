@@ -14,6 +14,12 @@ variable "scope" {
   type        = string
 }
 
+variable "region" {
+  description = "(Optional) Region where this resource will be managed. Defaults to the Region set in the provider configuration."
+  type        = string
+  default     = null
+}
+
 variable "capacity" {
   description = "(Required, Forces new resource) The web ACL capacity units (WCUs) required for this rule group."
   type        = number

@@ -2,6 +2,7 @@ resource "aws_wafv2_rule_group" "this" {
   name        = var.name
   description = var.description
   scope       = var.scope
+  region      = var.region
   capacity    = var.capacity
   tags        = var.tags
 
