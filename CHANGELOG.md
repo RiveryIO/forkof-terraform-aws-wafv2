@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [4.1.1](https://github.com/aws-ss/terraform-aws-wafv2/compare/v4.1.0...v4.1.1) (2026-01-31)
+
+
+### Bug Fixes
+
+* 'rate_based_rule_scope' statement ([7422827](https://github.com/aws-ss/terraform-aws-wafv2/commit/7422827aba54b8714bb9914cae504962f9ddccc0))
+
 ## [4.1.0](https://github.com/aws-ss/terraform-aws-wafv2/compare/v4.0.1...v4.1.0) (2026-01-31)
 
 
