@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [4.1.2](https://github.com/aws-ss/terraform-aws-wafv2/compare/v4.1.1...v4.1.2) (2026-01-31)
+
+
+### Bug Fixes
+
+* missing support 'region' argument on 'aws_wafv2_rule_group' ([672591f](https://github.com/aws-ss/terraform-aws-wafv2/commit/672591f9768e2c10f1b47a728e8e050989183a96))
+
 ### [4.1.1](https://github.com/aws-ss/terraform-aws-wafv2/compare/v4.1.0...v4.1.1) (2026-01-31)
 
 
