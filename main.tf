@@ -12347,6 +12347,7 @@ resource "aws_wafv2_web_acl" "this" {
 resource "aws_wafv2_web_acl_association" "this" {
   count = var.enabled_web_acl_association ? length(var.resource_arn) : 0
 
+  region       = var.region
   resource_arn = var.resource_arn[count.index]
   web_acl_arn  = aws_wafv2_web_acl.this.arn
 
@@ -12356,6 +12357,7 @@ resource "aws_wafv2_web_acl_association" "this" {
 resource "aws_wafv2_web_acl_logging_configuration" "this" {
   count = var.enabled_logging_configuration ? 1 : 0
 
+  region                  = var.region
   log_destination_configs = [var.log_destination_configs]
   resource_arn            = aws_wafv2_web_acl.this.arn
 

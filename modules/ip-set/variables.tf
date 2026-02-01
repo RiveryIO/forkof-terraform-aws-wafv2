@@ -14,6 +14,12 @@ variable "scope" {
   type        = string
 }
 
+variable "region" {
+  description = "(Optional) Region where this resource will be managed. Defaults to the Region set in the provider configuration."
+  type        = string
+  default     = null
+}
+
 variable "ip_address_version" {
   description = "(Required) Specify IPV4 or IPV6. Valid values are IPV4 or IPV6."
   type        = string
