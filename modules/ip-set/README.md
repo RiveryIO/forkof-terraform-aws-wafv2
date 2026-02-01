@@ -1,13 +1,16 @@
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3.6 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.51.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.51.0 |
 
 ## Modules
 
@@ -24,9 +27,10 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_addresses"></a> [addresses](#input\_addresses) | (Required) Contains an array of strings that specify one or more IP addresses or blocks of IP addresses in Classless Inter-Domain Routing (CIDR) notation. AWS WAF supports all address ranges for IP versions IPv4 and IPv6. | `list(string)` | n/a | yes |
-| <a name="input_description"></a> [description](#input\_description) | (Optional) A friendly description of the IP set. | `string` | n/a | yes |
+| <a name="input_description"></a> [description](#input\_description) | (Optional) A friendly description of the IP set. | `string` | `null` | no |
 | <a name="input_ip_address_version"></a> [ip\_address\_version](#input\_ip\_address\_version) | (Required) Specify IPV4 or IPV6. Valid values are IPV4 or IPV6. | `string` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | (Required) A friendly name of the IP set. | `string` | n/a | yes |
+| <a name="input_region"></a> [region](#input\_region) | (Optional) Region where this resource will be managed. Defaults to the Region set in the provider configuration. | `string` | `null` | no |
 | <a name="input_scope"></a> [scope](#input\_scope) | (Required) Specifies whether this is for an AWS CloudFront distribution or for a regional application. Valid values are CLOUDFRONT or REGIONAL. | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | Mapping of additional tags for resource. | `map(string)` | `null` | no |
 
