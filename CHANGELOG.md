@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [4.2.0](https://github.com/aws-ss/terraform-aws-wafv2/compare/v4.1.3...v4.2.0) (2026-05-07)
+
+
+### Features
+
+* add support for cloudfront in association_config ([dec71ff](https://github.com/aws-ss/terraform-aws-wafv2/commit/dec71ffcd2d0797e684c47b35e1129cf2d7845e3))
+
 ### [4.1.3](https://github.com/aws-ss/terraform-aws-wafv2/compare/v4.1.2...v4.1.3) (2026-02-01)
 
 
