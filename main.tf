@@ -67,6 +67,13 @@ resource "aws_wafv2_web_acl" "this" {
               default_size_inspection_limit = request_body.value.verified_access_instance.default_size_inspection_limit
             }
           }
+
+          dynamic "cloudfront" {
+            for_each = lookup(request_body.value, "cloudfront", null) == null ? [] : [1]
+            content {
+              default_size_inspection_limit = request_body.value.cloudfront.default_size_inspection_limit
+            }
+          }
         }
       }
     }
